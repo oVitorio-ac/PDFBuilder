@@ -46,7 +46,7 @@ def download_pdf():
         except ValueError:
             pdf_buffer = generate_pdf(1)  # Regenerar o PDF se o buffer estiver fechado
 
-    return send_file(pdf_buffer, as_attachment=True, download_name='output.pdf')
+    return send_file(pdf_buffer, as_attachment=True, download_name='lorem_pdf.pdf')
 
 @app.route('/cancel')
 def cancel():
